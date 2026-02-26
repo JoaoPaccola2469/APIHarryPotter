@@ -1,0 +1,56 @@
+#lista-personagens {
+    display: flex ;
+    flex-wrap: wrap ;
+    gap: 20px ;
+}
+
+#lista-personagens li {
+    flex: 30%;
+}
+
+.cardPersonagem {
+    background: #2c2c2c;
+    border: 2px solid #0022ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardPersonagem:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 16, 130, 0.4);
+}
+
+.card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 2px solid #000dff;
+}
+
+.card-content {
+    padding: 15px;
+    color: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-content strong {
+    color: #0320c2;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card-content p {
+    margin: 5px 0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+
